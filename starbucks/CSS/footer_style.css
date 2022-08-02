@@ -1,0 +1,95 @@
+/* footer_style.css */
+#main_footer{
+  width: 100%;
+  background-color: #2c2a29;
+  color: #999;
+  padding: 38px 0;
+
+  text-align: center;
+  font-size: 12px;
+}
+  .f_menus{
+    width: 1140px;
+    margin: 0 auto 50px;
+    display: flex;
+    background: url(../img/footer_logo.png) no-repeat;
+    background-position: 1107px 2px;
+    text-align: left;
+  }
+    .f_menus > ul{
+      width: 220px;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+      .f_menus > ul > li{}
+        .f_menus > ul > li > a{
+          color: #fff;
+          line-height: 24px;
+        }
+        .f_menus > ul > li.f_menu_ttl > a{
+          font-size: 14px;
+          line-height: 28px;
+          margin-bottom: 5px;
+        }
+
+  .f_awards{
+    width: 100%;
+    height: 82px;
+    background-color: #282828;
+  }
+    .f_awards > .inner{
+      width: 1140px;
+      margin: 0 auto;
+      display: flex;
+    }
+      .f_awards > .inner > a{
+        margin-top: 4px;
+      }
+      .f_awards > .inner > a:first-child{
+        margin-left: 4px;
+      }
+        .f_awards > .inner > a > img{}
+
+
+  .policy{
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+    .policy > li{
+      display: inline-block;
+      padding-left: 5px;
+      padding-right: 10px;
+      background: url(../img/line2.png) no-repeat right center;
+    }
+      .policy > li > a{
+        color: #ccc;
+        line-height: 14px;
+      }
+        .policy > li > a > strong{
+          color: #00b050;
+          font-weight: 700;
+        }
+
+  .info{
+    margin-bottom: 20px;
+  }
+    .info > a{
+      display: inline-block;
+      width: 110px; height: 30px;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      margin: 0 2px;
+    }
+
+  .copy_menu{
+    margin-bottom: 15px;
+  }
+    .copy_menu > li{
+      display: inline;
+      margin: 0 7px;
+    }
+
+  .copyright{}

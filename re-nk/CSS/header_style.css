@@ -1,0 +1,96 @@
+/* header_style.css */
+#main_header{
+  width: 1020px; height: 120px;
+  position: relative;
+  margin: 0 auto;
+}
+  #logo{
+    position: absolute;
+    left: 438px; top: 39px;
+  }
+    #logo > a{
+      width: 145px; height: 28px;
+      background: url(../images/logo.png);
+      text-indent: -6000px; overflow: hidden;
+    }
+
+  #language{
+    position: absolute;
+    right: 0; top: 85px;
+  }
+    #language > ul{ display: flex;}
+      #language > ul > li{ height: 26px;}
+      #language > ul > li:first-child{
+        background: url(../images/line_2.jpg) no-repeat 0 50%;
+        padding-left: 14px;
+      }
+      #language > ul > li:last-child{
+        background: url(../images/line_1.jpg) no-repeat 0 50%;
+        padding-left: 11px;
+        margin-left: 8px;
+      }
+        #language > ul > li > a{
+          line-height: 26px;
+          font-size: 14px;
+        }
+
+  #top_nav{
+    position: absolute;
+    left: 340px; top: 85px;
+    z-index: 10;
+  }
+    #top_nav > ul{
+      display: flex;
+      background: url(../images/line_1.jpg) no-repeat 0 50%;
+      padding-left: 21px;
+    }
+      #top_nav > ul > li{
+        margin-right: 17px;
+        height: 26px;
+      }
+      #top_nav > ul > li:nth-of-type(6),
+      #top_nav > ul > li:nth-of-type(7){ margin-right: 0;}
+      #top_nav > ul > li:nth-of-type(6){
+        background: url(../images/line_1.jpg) no-repeat 0 50%;
+        padding-left: 15px;
+        margin-left: 2px;
+      }      
+        #top_nav > ul > li > a{
+          font-weight: 700;
+          font-size: 13px;
+          letter-spacing: -1px;
+          line-height: 26px;
+        }
+        #top_nav > ul > li:nth-of-type(6) > a,
+        #top_nav > ul > li:nth-of-type(7) > a{
+          width: 28px; height: 26px;
+          text-indent: -6000px; overflow: hidden;
+        }
+        #top_nav > ul > li:nth-of-type(6) > a{ background: url(../images/btn_search.png);}
+        #top_nav > ul > li:nth-of-type(7) > a{ background: url(../images/btn_facebook.png);}
+
+  #main_nav{
+    position: absolute;
+    left: 0; top: 85px;
+  }
+    #main_nav > ul{ display: flex;}
+      #main_nav > ul > li{
+        height: 26px;
+        margin-right: 45px;
+      }
+      #main_nav > ul > li:last-child{
+        margin-right: 0;
+        margin-left: 390px;
+        background-color: #222;
+        border-radius: 13px;
+      }
+        #main_nav > ul > li > a{
+          line-height: 26px;
+          font-size: 17px;
+          font-family: 'Noto Sans KR';
+        }
+        #main_nav > ul > li:last-child > a{
+          color: #fff;
+          padding: 0 18px;
+          font-weight: 300;
+        }

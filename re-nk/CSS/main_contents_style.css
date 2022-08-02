@@ -1,0 +1,119 @@
+/* main_contents_style.css */
+#visual_image {
+  position: relative;
+  height: 100%;
+}
+
+#visual_image .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+#visual_image .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#visual_image .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+#wrap{
+  width: 988px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 88px;
+  padding-bottom: 95px;
+}
+#wrap h3{
+  font-weight: 900;
+  font-size: 14px;
+  word-spacing: 2px;
+  margin-bottom: 19px;
+  line-height: 22px;
+}
+#wrap .more{
+  width: 41px; height: 10px;
+  background: url(../images/more.jpg);
+  text-indent: -6000px; overflow: hidden;
+}
+
+  #wrap > article{
+    border-top: 2px solid #000;
+    padding-top: 23px;
+
+  }
+  #college{}
+  #club{}
+
+    #college > a,
+    #club > a{
+      width: 225px; height: 300px;
+      box-sizing: border-box;
+      padding-top: 197px;
+    }
+    #college > a{
+      background: url(../images/thumb_college.png) no-repeat;
+    }
+    #club > a{
+      background: url(../images/thumb_club.jpg) no-repeat;
+    }
+
+  #story{
+    width: 502px;
+    display: flex;
+    justify-content: space-between;
+  }
+    #story > figure{}
+    #story > div{
+      width: 207px;
+      background: url(../images/con3_title.jpg), url(../images/con_hr.jpg);
+      background-repeat: no-repeat;
+      background-position: 0 0, 0 103px;
+      padding-top: 124px;
+    }
+    #story > div .more{
+      margin-top: 28px;
+    }
+
+  #event{
+    width: 100%;
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+  }
+    #event > div{
+      width: 225px;
+      background: url(../images/con4_title.jpg), url(../images/con_hr.jpg);
+      background-repeat: no-repeat;
+      background-position: 0 0, 0 55px;
+      padding-top: 77px;
+    }
+    #event > div .more{
+      margin-top: 55px;
+    }
+    #event > .event_list{
+      width: 745px;
+      display: flex;
+    }
+      #event > .event_list > li{
+        margin-right: 18px;
+      }

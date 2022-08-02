@@ -1,0 +1,466 @@
+/* main_contents_style.css*/
+
+/** visual image **/
+#visual_image{
+  width: 100%; height: 645px;
+  border-top: 1px solid #e5e5e5;
+  background: url(../img/2021_strawberry_bg.jpg) center;
+
+  margin-top: 122px;
+}
+  #visual_image > div{
+    width: 1100px;
+    margin: 0 auto;
+  }
+
+/** notice & promotion **/
+#promotion{ display: none;}
+
+#line_notice{
+  width: 100%; height: 62px;
+  background: url(../img/notice_line_bg.png) repeat-y center;
+}
+  #line_notice > .inner{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+  }
+    /* 공지사항 */
+    #line_notice .left{
+      width: 640px; height: 62px;
+      background-color: #111;
+      display: flex;
+      justify-content: space-between;
+    }
+      #line_notice .left > dl{
+        display: flex;
+      }
+        #line_notice .left > dl > dt{
+          color: #fff;
+          width: 75px;
+          line-height: 62px;
+          font-size: 17px;
+        }
+          #line_notice .left > dl > dd{}
+            #notice_list{
+              position: relative;
+              width: 485px;
+              height: 62px;
+              overflow: hidden;
+            }
+              #notice_list > li{
+                width: 100%; height: 62px;
+                position: absolute;
+                left: 0; top: 62px;
+              }
+              #notice_list > li:first-child{
+                top: 0;
+              }
+                #notice_list > li > a{
+                  color: #fff;
+                  line-height: 62px;
+                  font-size: 14px;
+                }
+      /* 더보기 */
+      #line_notice .left > .more{
+        width: 35px; height: 35px;
+        background: url(../img/btn_notice_plus.png);
+        background-size: 35px auto;
+        text-indent: -6000px; overflow: hidden;
+        margin-top: 13px; margin-right: 21px;
+      }
+
+    /* 프로모션 */
+    #line_notice .right{
+      width: 460px; height: 62px;
+      background-color: #f5f4ef;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+      #line_notice .right > p{
+        margin-left: 202px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      #line_notice .right > label{
+        margin-right: 23px;
+      }
+        #line_notice .right > label > img{
+          transform: rotateX( 0deg);
+          transition-duration: 300ms;
+        }
+        #promotion:checked + #line_notice .right > label > img{
+          transform: rotateX( 180deg);
+        }
+
+#promotion_detail{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  background-color: #f5f4ef;
+  transition-duration: 300ms;
+}
+#promotion:checked ~ #promotion_detail{
+  height: 659px;
+}
+  #promotion_detail > .promotion_list{
+    width: 1100px; height: 100%;
+    margin: 0 auto;
+    background-color: pink;
+  }
+
+/** login & join **/
+#new_rewards{
+  width: 100%; height: 237px;
+  background-color: #1e3932;
+}
+  #new_rewards > .inner{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+    .rewards_logo{ margin-left: 50px;}
+      .rewards_logo > img{ width: 176px;}
+    .rewards_cont{
+      width: 795px;
+      margin-right: 41px;
+    }
+      .rewards_cont > div{
+        display: flex;
+      }
+      .rewards_cont > .top{
+        height: 106px;
+        border-bottom: 1px solid #4b615b;
+      }
+      .rewards_cont > .bottom{
+        padding-top: 20px;
+      }
+        .rewards_cont > div > .text{
+          width: 612px;
+          color: #fff;
+        }
+          .rewards_cont > .top > .text > h2{
+            font-size: 27px;
+            letter-spacing: -1px;
+            line-height: 35px;
+            margin-bottom: 10px;
+          }
+            .rewards_cont > .top > .text > h2 > strong{
+              font-weight: 700;
+            }
+          .rewards_cont > .top > .text > p{
+            font-size: 18px;
+            letter-spacing: -1px;
+            line-height: 24px;
+          }
+            .rewards_cont > .top > .text > p > strong{
+              font-weight: 700;
+            }
+
+          .rewards_cont > .bottom > .text > p{
+            font-size: 14px;
+          }
+            .rewards_cont > .bottom > .text > p > strong{
+              font-weight: 700;
+            }
+
+        .rewards_cont > div > .button{
+          width: 183px;
+          display: flex;
+          justify-content: space-between;
+        }
+          .rewards_cont > div > .button > a{
+            color: #fff;
+          }
+
+          .join, .login, .gift{
+            height: 38px;
+            box-sizing: border-box;
+            text-align: center; line-height: 34px;
+            border-radius: 5px;
+            font-size: 14px;
+            letter-spacing: 1px;
+          }
+          .join{
+            width: 93px;
+            background-color: #00704a;
+            line-height: 38px;
+            margin-top: 48px;
+          }
+          .login{
+            width: 79px;
+            border: 2px solid #fff;
+            margin-top: 48px;
+          }
+          .gift{
+            width: 183px;
+            border: 2px solid #fff;
+          }
+          
+#wrap{
+width: 100%;
+}
+  #wrap > section{
+    width: 100%;
+  }
+  #bean{
+    background: url(../img/19_christmas1_coffee_bg_1.jpg) center;
+    height: 573px;
+  }
+  #reserve{
+    background: url(../img/19_christmas_main_res_bean.png) no-repeat 600px 0 #0f0f0f;
+    height: 400px;
+  }
+  #favorite{
+    background: url(../img/fav_prod_bg_new.jpg) center / cover fixed;
+    height: 798px;
+  }
+  #store{
+    background: url(../img/reserve_bg.jpg) center / cover fixed;
+    height: 458px;
+    /* 최종 출력될 높이(590px)에 맞춰서 padding-top을 준 만큼 뺀값 */
+    padding-top: 132px;
+  }
+  #store_search{
+    background: url(../img/store_bg.jpg) center;
+    height: 400px;
+  }
+
+    #wrap > section > div{
+      width: 1300px;
+      margin: 0 auto;
+
+      display: flex;
+    }
+    #wrap > section > div#store_logo{
+      width: 334px;
+      height: 334px;
+    }
+    #wrap > section#favorite > div{
+      flex-direction: row-reverse;
+    }
+
+      /*섹션별 이미지 영역*/  
+      #wrap > section > div > .main_image{}
+
+      /* 텍스트 영역 */
+      #wrap > section > div > .text{}
+        #wrap > section > div > .text > .text_detail{}
+          #wrap > section > div > .text > .text_detail > h2,
+          #wrap > section > div > .text > .text_detail > p{}
+        /* 자세히 보기 */
+        #wrap > section .more{
+          width: 121px; height: 34px;
+          border-radius: 3px;
+          border: 2px solid #000;
+
+          text-align: center;
+          line-height: 34px;
+          font-size: 14px;
+        }
+        #wrap > section#reserve .more,
+        #wrap > section#favorite .more{
+          color: #fff;
+          border-color: #fff;
+        }
+
+        /*** 섹션별 상세 스타일적용 **************************/
+        /** bean **/
+        #bean .main_image{
+          margin-left: 68px;
+          margin-top: 78px;
+        }
+
+        #bean .text{
+          margin-left: 139px;
+          margin-top: 176px;
+        }
+          #bean .text_detail{
+            width: 583px;
+            height: 213px;
+            margin-bottom: 24px;
+          }
+            #bean .text_detail > h2{
+              color: #244c1a;
+              font-size: 20px;
+              font-weight: 700;
+              letter-spacing: -1px;
+            }
+            #bean .text_detail > h2 > strong{
+              display: block;
+              color: #d52e35;
+              font-size: 34px;
+              font-weight: 700;
+              margin-bottom: 14px;
+            }
+            #bean .text_detail > p{
+              color: #494947;
+              font-size: 18px;
+              letter-spacing: -1px;
+              font-weight: 700;
+              line-height: 22px;
+            }
+              #bean .text_detail > p > span:first-child{
+                display: block;
+                margin-bottom: 10px;
+              }
+
+        /** reserve **/
+        #reserve .main_image{
+          margin-left: 155px;
+          margin-top: 142px;
+        }
+
+        #reserve .text{
+          margin-left: 64px;
+          margin-top: 92px;
+        }
+          #reserve .text_detail{
+            width: 380px;
+            height: 171px;
+            margin-bottom: 38px;
+            color: #fff;
+          }
+            #reserve .text_detail > h2{
+              letter-spacing: 6px;
+              margin-bottom: 10px;
+            }
+              #reserve .text_detail > h2 > strong{
+                display: block;
+                font-size: 28px;
+                font-weight: 700;
+                letter-spacing: 8px;
+              }
+            #reserve .text_detail > p{
+              font-size: 24px;
+              letter-spacing: -2px;
+              word-spacing: 2px;
+              line-height: 35px;
+            }
+              #reserve .text_detail > p > strong{
+                color: #d30f19;
+                font-weight: 700;
+                font-size: 29px;
+              }
+
+        /** favorite **/
+        #favorite .main_image{ margin-top: 98px;}
+          #favorite .main_image > img{ width: 712px;}
+
+        #favorite .text{
+          margin-right: 120px;
+          margin-top: 118px;
+        }
+          #favorite .text_detail{
+            width: 468px;
+            height: 406px;
+            margin-bottom: 49px;
+            color: #fff;
+            text-align: right;
+          }
+            #favorite .text_detail > h2{
+              font-size: 42px;
+              letter-spacing: 8px;
+              font-weight: 700;
+              margin-bottom: 32px;
+            }
+              #favorite .text_detail > h2 > strong{
+                display: block;
+                font-size: 96px;
+                font-weight: 500;
+                letter-spacing: 12px;
+                line-height: 76px;
+              }
+                #favorite .text_detail > h2 > strong > span{
+                  font-size: 86px;
+                }
+            #favorite .text_detail > p{}
+              #favorite .text_detail > p > span{
+                display: block;
+                line-height: 23px;
+              }
+              #favorite .text_detail > p > span:first-child{
+                font-size: 28px;
+                letter-spacing: -1px;
+                line-height: 32px;
+                margin-bottom: 7px;
+              }
+                #favorite .text_detail > p > span > strong{
+                  font-weight: 500;
+                }
+
+          #favorite .more{ margin-left: 338px;}
+
+
+        /** store_search **/
+      #store_search > div{
+        height: 100%;
+        background: url(../img/store_exp_img03.png), url(../img/store_exp_img02.png), url(../img/store_exp_img04.png);
+        background-repeat: no-repeat;
+        background-position: 530px -60px, 170px 0, 1031px 298px;
+      }
+        #store_search .main_image{
+          margin-left: 400px;
+          margin-top: 149px;
+        }
+
+        #store_search .text{
+          margin-left: 128px;
+          margin-top: 100px;
+        }
+          #store_search .text_detail{
+            width: 380px;
+            margin-bottom: 30px;
+          }   
+            #store_search .text_detail > h2{
+              font-size: 19px;
+              margin-bottom: 9px;
+            }
+              #store_search .text_detail > h2 > strong{
+                display: block;
+                font-size: 25px;
+                font-weight: 700;
+                letter-spacing: -1px;
+              }
+            #store_search .text_detail > p{
+              letter-spacing: -1px;
+              word-spacing: 2px;
+              font-size: 15px;
+            }
+              #store_search .text_detail > p > strong{
+                font-weight: 700;
+              }
+          
+        /** store **/
+        #store_logo{
+          position: relative;
+        }
+          #store_logo > .front,
+          #store_logo > .back{
+            position: absolute;
+            left: 0; top: 0;
+            height: 334px;
+            backface-visibility: hidden;
+            transition-duration: 0.3s;
+          }
+
+          #store_logo > .front{
+            transform: rotateY( 0deg);
+          }
+          #store_logo > .back{
+            transform: rotateY( 180deg);
+          }
+          #store_logo:hover > .front{
+            transform: rotateY( 180deg);
+          }
+          #store_logo:hover  > .back{
+            transform: rotateY( 360deg);
+          }
+
+            #store_logo > .back > .more{
+              position: absolute;
+              left: 102px; top: 247px;
+            }

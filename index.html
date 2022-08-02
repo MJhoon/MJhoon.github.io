@@ -1,595 +1,333 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kintex</title>
-  <link rel="stylesheet" href="r_css/master.css" />
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/menu1.js" defer></script>
-  <script src="js/swiper-bundle.js"></script>
-  <script src="js/notice_list.js" defer></script>
-</head>
-<body>
-  <!--m_header_wrap s-->
-  <div id="m_header_wrap">
-    <input type="checkbox" id="toggle_menu" />
-    <header id="main_header_m">
-      <h1 class="logo"><a href="#">kintex</a></h1>
-      <label for="toggle_menu" class="toggle_btn">햄버거버튼</label>
-    </header>
-    <nav id="main_nav_m">
-      <ul>
-        <label for="toggle_menu" class="toggle_btn">햄버거버튼</label>
-        <div id="search_wrap">
-          <form action="">
-            <fieldset>
-              <legend>검색어를 입력하세요.</legend>
-              <input type="text" id="search_t" />
-              <input type="image" id="search_btn" src="images/search_icon_btn.png" />
-            </fieldset>
-          </form>
-        </div>
-        <div id="organizer"><a href="#">ORGANIZER</a></div>
-        <li>
-          <a href="#">행사안내</a>
-          <ul class="sub_nav">
-            <li><a href="#">전체 일정</a></li>
-            <li><a href="#">전시 일정</a></li>
-            <li><a href="#">회의 일정</a></li>
-            <li><a href="#">문화행사 일정</a></li>
-            <li><a href="#">기타행사 일정</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">시설안내</a>
-          <ul class="sub_nav">
-            <li><a href="#">전시홀</a></li>
-            <li><a href="#">회의실</a></li>
-            <li><a href="#">오피스</a></li>
-            <li><a href="#">부대시설</a></li>
-            <li><a href="#">등록업체</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">이용안내</a>
-          <ul class="sub_nav">
-            <li><a href="#">편의시설</a></li>
-            <li><a href="#">교통안내</a></li>
-            <li><a href="#">숙박안내</a></li>
-            <li><a href="#">관광안내</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">홍보센터</a>
-          <ul class="sub_nav">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">홍보자료</a></li>
-            <li><a href="#">고객만족센터</a></li>
-            <li><a href="#">VR보기</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">KINTEX</a>
-          <ul class="sub_nav">
-            <li><a href="#">개요</a></li>
-            <li><a href="#">CEO 인사말</a></li>
-            <li><a href="#">ESG 경영</a></li>
-            <li><a href="#">경영공시</a></li>
-            <li><a href="#">조직도</a></li>
-            <li><a href="#">위치안내</a></li>
-          </ul>
-        </li>
-      </ul>
-      <label for="toggle_menu" class="btn_close"></label>
-    </nav>
-  </div>
-<!--m_header_wrap e-->
-<!--d_header_wrap s-->
-<div id="d_header_wrap">
-  <header id="main_header_d">
-    <div id="header_wrap">  
-        <h1 class="logo"><a href="#">kintex</a></h1>
-      <!--main_nav-->
-      <div id="main_nav_d">
-        <ul>
-          <li>
-            <h2><a href="#">행사안내</a></h2>
-            <div class="sub_nav">
-              <div class="inner">
-                <ul>
-                  <li><a href="#">전체 일정</a></li>
-                  <li><a href="#">전시 일정</a></li>
-                  <li><a href="#">회의 일정</a></li>
-                  <li><a href="#">문화행사 일정</a></li>
-                  <li><a href="#">기타행사 일정</a></li>
-                </ul>
-              </div><!--inner end-->
-            </div><!--sub_nav end-->
-          </li>
-          <li>
-            <h2><a href="#">시설안내</a></h2>
-            <div class="sub_nav">
-              <div class="inner">
-                <ul>
-                  <li><a href="#">전시홀</a></li>
-                  <li><a href="#">회의실</a></li>
-                  <li><a href="#">오피스</a></li>
-                  <li><a href="#">부대시설</a></li>
-                  <li><a href="#">등록업체</a></li>
-                </ul>
-              </div><!--inner end-->
-            </div><!--sub_nav end-->
-          </li>
-          <li>
-            <h2><a href="#">이용안내</a></h2>
-            <div class="sub_nav">
-              <div class="inner">
-                <ul>
-                  <li><a href="#">편의시설</a></li>
-                  <li><a href="#">교통안내</a></li>
-                  <li><a href="#">숙박안내</a></li>
-                  <li><a href="#">관광안내</a></li>
-                </ul>
-              </div><!--inner end-->
-            </div><!--sub_nav end-->
-          </li>
-          <li>
-            <h2><a href="#">홍보센터</a></h2>
-            <div class="sub_nav">
-              <div class="inner">
-                <ul>
-                  <li><a href="#">공지사항</a></li>
-                  <li><a href="#">홍보자료</a></li>
-                  <li><a href="#">고객만족센터</a></li>
-                  <li><a href="#">VR보기</a></li>
-                </ul>
-              </div><!--inner end-->
-            </div><!--sub_nav end-->
-          </li>
-          <li>
-            <h2><a href="#">KINTEX</a></h2>
-            <div class="sub_nav">
-              <div class="inner">
-                <ul>
-                  <li><a href="#">개요</a></li>
-                  <li><a href="#">CEO 인사말</a></li>
-                  <li><a href="#">ESG 경영</a></li>
-                  <li><a href="#">경영공시</a></li>
-                  <li><a href="#">조직도</a></li>
-                  <li><a href="#">위치안내</a></li>
-                </ul>
-              </div><!--inner end-->
-            </div><!--sub_nav end-->
-          </li>
-        </ul>
-      </div>
-      <!--main_nav end-->
-      <!--<div id="translate">
-        <ul>
-          <li><a href="#">KOR</a></li>
-          <li><a href="#">ENG</a></li>
-          <li><a href="#">CHN</a></li>
-        </ul>
-      </div>-->
-      <!--search_wrap-->
-      <div id="search_wrap_d">
-        <form action="">
-          <fieldset>
-            <legend>통합검색</legend>
-            <input type="text" id="search_txt">
-            <input type="image" id="search_btn" src="images/icon_magnifier_white.png" alt="검색" />
-          </fieldset>
-        </form>
-      </div>
-      <!--search_wrap end-->
-    </div>
-  </header>
-
-  <!--<script defer>
-  $("#main_nav_d").mouseenter(function(){    
-    $("#main_nav_d .inner li a").css({color: "#3665C1"});
-    $("#main_header_d").css({backgroundColor:"#fff"});
-    $("#main_header_d").stop().animate({height: "500px"},500);
-  });
-  $("#main_nav_d").mouseleave(function(){
-    $("#main_nav_d .inner li a").css({color: "#fff"});
-    $("#main_header_d").css({backgroundColor:"none"});
-    $("#main_header_d").stop().animate({height: "105px"},500);
-  });
-  </script>-->
-
-</div>
-<div class="gnb_bg"></div>
-<!--d_header_wrap e-->
-  <!--visual_image-->
-  <div id="visual_image_d">
-    <div id="visual_image_wrap">
-      <h3>
-        글로벌 마이스 혁신플랫폼,<br /> KINTEX
-      </h3>
-      <p>
-        세계 수준의 전시회 및 컨벤션을 통해 국내외 기업들의 무역 마케팅의 중심 역할 수행<br />
-        대한민국 대표 전시컨벤션센터이자 아시아 전시산업의 대표적인 글로벌 전시주최자입니다.
-      </p>
-
-      <a href="#">
-        <p>ORGANIZER</p>
-      </a>
-    </div>
-  </div>
-
-  <!--visual_image end-->
-    <div id="wrap">
-    <section id="info_schedule">
-      <div class="sec_card_ttl">
-        <h2>일정안내</h2>
-        <p>다양한 전시회, 박람회, 페어들을 만나보세요!</p>
-      </div>
-      <!--card-->
-      <div id="card_wrap">
-        <!-- Swiper -->
-        <div class="swiper cardSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="#">
-                <img class="card_image" src="images/kin_poster_card1.png" alt="전시회포스터" /> 
-                <div class="card_text_box">
-                  <h3>메가쇼 2021 시즌2</h3>
-                  <p>2021-11-18 ~ 2021-11-21</p>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Freelancer - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">FaceMj();</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-success text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-              </a>
             </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img class="card_image" src="images/kin_poster_card2.png" alt="전시회포스터" />
-                <div class="card_text_box">
-                  <h3>2021 트래블쇼</h3>
-                  <p>2021-11-18 ~ 2021-11-21</p>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-success text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avatar.png" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">안녕하세요!</h1>
+                <!-- Icon Divider-->
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mt-3">항상 궁금한 웹퍼블리셔 문지훈입니다.</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary my-5 pb-5">Portfolio</h2>
+                <!-- Icon Divider-->
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/kintex.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/starbucks.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Renk.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="..." />
+                        </div>
+                    </div>
                 </div>
-              </a>
             </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img class="card_image" src="images/kin_poster_card3.png" alt="전시회포스터" />
-                <div class="card_text_box">
-                  <h3>2021 케이펫페어(대한민국펫산업박람회)</h3>
-                  <p>2021-11-19 ~ 2021-11-21</p>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section bg-success" id="contact">
+            <div class="container masthead pt-3">
+                <!-- Contact Section Heading-->
+                <h1 class="masthead-heading text-center text-uppercase text-white pb-5">"왜 그럴까?"</h1>
+                <div class="masthead-subheading text-center text-white my-0">
+                  <p>저에게 이 물음은 항상 마음속에 가지고 있는 <span>`마스터키`</span> 입니다.</p>
+                  <p>항상 최선을 고민하는 저에게 다양한 문제와 이슈에 맞부딪쳤을때,
+                  <p><span>`마스터키`</span>처럼 틀에 박힌 사고와 습관을 환기 시켜주는 <span>'마법의 열쇠'</span> 였습니다.</p>
+                  <p><span>편견과 고정관념</span>을 늘 <span>경계</span>하며,</p>
+                  <p><span>문제의 원인</span>에 대한 <span>구조적인 분석</span>과 <span>문제 해결</span>을 위한</p>
+                  <p><span>창의적인 사고력</span>으로 <span>끊임없이 노력하는 웹퍼블리셔</span>가 되겠습니다.</p>
+                  <p>감사합니다.</p>
+                </div>                                  
+                
+                  <h1 class="text-center mx-auto pt-5"><a class="text-white"href="mailto:s201064@naver.com">s201064@naver.com</a></h1>
+                
+                  <!-- Contact Section Form-->
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web button</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="mb-4">Github.</h4>
+                        <p class="lead mb-0">
+                            <a href="https://github.com/MJhoon">github.com/MJhoon</a>.
+                        </p>
+                    </div>
                 </div>
-              </a>
             </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img class="card_image" src="images/kin_poster_card4.png" alt="전시회포스터" />
-                <div class="card_text_box">
-                  <h3>제 14회 국제환경장비 및 자원순환산업전</h3>
-                  <p>2021-11-24 ~ 2021-11-26</p>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; FaceMj 2022</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container modal-dialog-scrollable">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">kintex</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kintex.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <h4 class="mb-4">Kintex 리디자인</h4>
+                                    <p class="mb-0">기획,디자인,퍼블리싱 100% 개인작업 반응형 웹사이트</p>
+                                    <p class="mb-4">swiper.js를 이용해 전시회 일정과 전시회장의 부대시설들을 구현했습니다.</p>
+                                    <a class="btn btn-outline-success" href="https://drive.google.com/file/d/18_anT31ixCAMnW-rFIwkIihZb_qnJqNY/view?usp=sharing">기획서 pdf</a>
+                                    <a class="btn btn-outline-success" href="/kintex/index.html">웹 페이지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a> 
             </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img class="card_image" src="images/kin_poster_card5.png" alt="전시회포스터" />
-                <div class="card_text_box">
-                  <h3>2021 스마트상점 &middot; 리테일 엑스포</h3>
-                  <p>2021-11-25 ~ 2021-11-27</p>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Starbucks</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/starbucks.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">html,css,jQuery,swiper.js를 이용한 스타벅스 클론 코딩입니다.</p>
+                                    <a class="btn btn-outline-success" href="https://drive.google.com/file/d/18_anT31ixCAMnW-rFIwkIihZb_qnJqNY/view?usp=sharing">기획서 pdf</a>
+                                    <a class="btn btn-outline-success" href="/starbucks/index.html">웹 페이지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
             </div>
-          </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".cardSwiper", {
-            slidesPerView: 5,
-            spaceBetween: 22,
-            slidesPerGroup:1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-        </script>
-      </div>
-      <a href="sub_page.html">자세히 보기</a>
-
-
-    </section>
-    <!--section_card end-->
-    <section id="info_vr">
-      <div class="sec_card_ttl">
-        <h2>시설안내</h2>
-        <p>킨텍스를 자세히 보여드립니다!</p>
-      </div>
-      <div id="vr_nav">
-        <div id="vr_left">
-          <ul class="points_exhibition">
-            <li><img src="images/info_vr_map_expo_hall.png" alt="전시홀 사진"></li>
-            <li><img src="images/info_vr_map_convention.png" alt="회의실 사진"></li>
-            <li><img src="images/info_vr_map_food_area.png" alt="식음시설 사진"></li>
-            <li><img src="images/info_vr_map_support.png" alt="편의시설 포인트"></li>
-          </ul>
-          <ul class="point">
-            <li class="active"><a href="images/ponit_exhibition.png"></a></li>
-            <li><a href="images/ponit_conference.png"></a></li>
-            <li><a href="images/point_f&b.png"></a></li>
-            <li><a href="images/point_support.png"></a></li>
-          </ul>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Re:nk</h2>
+                                    <!-- Icon Divider-->
+                                    <!--<div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>-->
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Renk.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">html,css,jQuery,swiper.js를 이용한 Re:nk 클론 코딩입니다.</p>
+                                    <a class="btn btn-outline-success" href="https://drive.google.com/file/d/18_anT31ixCAMnW-rFIwkIihZb_qnJqNY/view?usp=sharing">기획서 pdf</a>
+                                    <a class="btn btn-outline-success" href="/re-nk/index.html">웹 페이지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="vr_right">
-          <div class="swiper exhibition active">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/kin_exhibition/1.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_exhibition/2.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_exhibition/3.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_exhibition/4.JPG" alt="1층몰 전경사진" /></div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Controller</h2>
+                                    <!-- Icon Divider-->                                  
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-success" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".exhibition", {
-              spaceBetween: 30,
-              centeredSlides: true,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-            });
-          </script>
-
-          <div class="swiper conference active">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/kin_conference/2.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_conference/5.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_conference/4.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_conference/7.JPG/" alt="1층몰 전경사진" /></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".conference", {
-              spaceBetween: 30,
-              centeredSlides: true,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-            });
-          </script>
-
-          <div class="swiper f_b active">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/kin_f_b/1.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_f_b/2.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_f_b/3.JPG" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_f_b/4.JPG" alt="1층몰 전경사진" /></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".f_b", {
-              spaceBetween: 30,
-              centeredSlides: true,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-            });
-          </script>
-
-          <div class="swiper support active">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="images/kin_support/1.jpg" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_support/2.jpg" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_support/3.jpg" alt="1층몰 전경사진" /></div>
-              <div class="swiper-slide"><img src="images/kin_support/4.jpg" alt="1층몰 전경사진" /></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".support", {
-              spaceBetween: 30,
-              centeredSlides: true,
-              autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
-            });
-          </script>
-
         </div>
-        <div id="vr_text">
-          <ul>
-            <li class="active">
-              <h2>전시홀</h2>
-              <p>킨텍스는 실내 전시면적 총 108,000㎡으로 국내 최대 규모의 전시면적을 보유한 전시 컨벤션센터입니다.<br /> 대형 국제전시회는 물론, 중소형 전시회 및 다양한 문화행사의 성공적인 개최를 위한
-                최적화된 시설과 서비스를 제공합니다.</p>
-            </li>
-            <li>
-              <h2>회의실</h2>
-              <p>KINTEX 1,2전시장에 위치한 37개의 회의실은 다양한 규모로 분할 또는 통합이 가능하여 원하는 규모의 행사 개최가 가능합니다.<br /> 또한 용도별로 강의식, 극장식, 연회식, 리셉션 등 다양한 행사를 개최할 수 있습니다.</p>
-            </li>
-            <li>
-              <h2>식음시설</h2>
-              <p>KINTEX 1, 2전시장에는 한식, 양식, 일식, 중식 등 전문 레스토랑과 스낵, 디저트&카페를 보유하고 있어 다양한 메뉴를 이용하실 수 있으며,<br /> 동시 수용인원 400명 규모의 대형 푸드코트, 다수의 편의점 등을 보유하고 있습니다.</p>
-            </li>
-            <li>
-              <h2>편의시설</h2>
-              <p>KINTEX는 의무실, 수유실 등 방문객들이 더욱 안전하고 편리하게 전시장을 이용할 수 있도록 지원시설을 운영하고 있습니다.<br /> 또한, 고양시 지역 홍보관 등을 운영하며 다양한 볼거리를 제공하고 있습니다.</p>
-            </li>
-          </ul>
-          <a href="https://k-mice.visitkorea.or.kr/vr/sites/KIN.kto?lang=ko#">VR로 보러가기</a>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Locked Safe</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-success" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script>
-          $(function(){
-            var pointIndex = 0;
-            $("#vr_left > .point > li").click(function(){
-              pointIndex=$(this).index();
-              $(".points_exhibition > li").removeClass("active");
-              $("#vr_right > div").removeClass("active");
-              $("#vr_text > ul > li").removeClass("active");
-
-              $(".points_exhibition > li").eq(pointIndex).addClass("active");
-              $("#vr_right > div").eq(pointIndex).addClass("active");
-              $("#vr_text > ul > li").eq(pointIndex).addClass("active");
-            });
-            $(".points_exhibition > li").click(function(){
-              $(".points_exhibition > li").removeClass("active");
-            });
-          });
-        </script>
-      </div>
-    </section>
-
-    <section id="info_use">
-      <div class="sec_card_ttl">
-        <h2>이용안내</h2>
-        <p>더욱 편리하게 이용하세요.</p>
-      </div>
-      <div class="info_use_wrap">
-        <ul>
-          <li>
-            <a class="info_bed" href="#">
-              <h3>숙박 안내</h3>
-              <img src="images/info_bed.png" alt="숙박안내아이콘" />
-              <p>편안한 휴식공간을 안내합니다.</p>
-            </a>
-          </li>
-          <li>
-            <a class="info_parking" href="#">
-              <h3>편의시설 안내</h3>
-              <img src="images/info_parking.png" alt="편의시설안내아이콘" />
-              <p>빠르고 편리한 길을 안내합니다.</p>
-            </a>
-          </li>
-          <li>
-            <a class="info_map" href="#">
-              <h3>오시는길</h3>
-              <img src="images/info_map.png" alt="오시는길" />
-              <p>실시간 주차상황을 확인할 수 있습니다.</p>
-            </a>
-          </li>
-          <li>
-            <a class="info_camera" href="#">
-              <h3>관광 안내</h3>
-              <img src="images/info_camera.png" alt="관광 안내" />
-              <p>다양한 관광명소를 확인할 수 있습니다.</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <section id="notice_wrap">
-      <dl>
-        <dt>공지사항</dt>
-        <dd>
-          <ul id="notice_list">
-            <li>
-              <a href="#">"코로나19 사회적 거리두기 강화 추진" 내용 중 대규모 행사·집회의 인원 기준 강화 안내('21.12.16발표)</a>
-              <span>2021.12.16</span>
-            </li>
-            <li>
-              <a href="#">㈜킨텍스에서 사외이사(비상임이사)를 모십니다.</a>
-              <span>2021.10.29</span>
-            </li>
-            <li>
-              <a href="#">2022년도 KINTEX 지정등록업체 모집 공고</a>
-              <span>2021.09.29</span>
-            </li>
-            <li>
-              <a href="#">[킨텍스-주최자] 코로나19 대응 방역관리 매뉴얼 (최종업데이트 : '21년 11월 4일)</a>
-              <span>2021.11.04</span></li>
-            <li>
-              <a href="#">2021년 공공조달 상생협력 지원 참여기업 모집 공고</a>
-              <span>2021.10.08</span></li>
-            <li>
-              <a href="#">공공재정환수법 시행 안내</a>
-              <span>2021.09.06</span></li>
-          </ul>
-        </dd>
-      </dl>
-      <!--<a href="#" class="more">공지사항 더보기</a>-->
-    </section>
-  </div>
-
-      <!--footer-->
-  <footer id="main_footer">
-    <div id="footer_wrap">
-      <h1>kintex</h1>
-      <ul class="policy">
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">이메일주소 무단수집거부</a></li>
-        <li><a href="#">공공 데이터 개방</a></li>
-      </ul>
-      <ul class="copy_menu">
-        <li>10390, 경기도 고양시 일산서구 킨텍스로 217-60</li>
-        <li>사업자등록번호: 128-81-78009</li>
-        <li>대표이사: 이화영</li>
-        <li>E-MAIL: kjna@kintex.com</li>
-        <li>TEL: 031-995-8114</li>
-      </ul>
-      <p class="copyright">
-        Copyright &copy; KINTEX All rights reserved
-      </p>
-    </div>
-  </footer>
-  <!--footer end-->
-</body>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-5">Submarine</h2>
+                                    <!-- Icon Divider-->
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <button class="btn btn-success" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
