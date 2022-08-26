@@ -1,0 +1,99 @@
+/*footer.css*/
+footer{
+  display: -moz-box;
+  display: flex;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  margin-top: auto;
+  padding: 48px 48px 56px;
+  background-color: #25282b;
+}
+.footer_left{}
+.copyright{
+  font-size: 13px;
+  color:#cfd1d5;
+}
+.info_service{
+  margin-top: 10px;
+  display:flex;
+}
+.info_service > a{
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #cfd1d5;
+}
+.info_service > a:nth-child(2){
+  position: relative;
+  margin-left: 17px;
+}
+.info_service > a:nth-child(2)::before{  
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -9px;
+  width: 1px;
+  height: 8px;
+  background-color: #44474b;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.infoText_wrap{
+  margin-top: 34px;
+}
+.infoText{
+  display:flex;
+  margin-top: 4px;
+}
+.infoText > p{
+  font-size: 11px;
+  color:#656a71;
+}
+.infoText > p:nth-child(2){
+  font-size: 11px;
+  color:#656a71;
+}
+.f_logo{
+  display:inline-block;
+  margin-top: 36px;
+}
+.hiddenf{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin-top: -1px;
+  overflow: hidden;
+}
+.f_logo::before{
+  content: "";
+  display: block;
+  width: 90px;
+  height: 20px;
+  background-image: url(/img/iconLogo_f.png);
+  background-size: cover;
+}
+
+.footer_right{
+  display: flex;
+}
+.siteMap_wrap{
+  text-align: right;
+  margin-left: 64px;
+}
+
+.siteMaptitle{    
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #cfd1d5;
+}
+
+.siteMap_wrap > a{
+  font-size: 13px;
+  line-height: 16px;
+  color: #9fa4ab;
+  margin-top: 16px;
+}

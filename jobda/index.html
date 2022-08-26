@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>jobda-clonecording</title>
+  <link rel="stylesheet" type="text/css" href="css/master.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/motion.js"></script>
+
+</head>
+<body>
+  <header>
+    <div id="header_wrap">
+      <div class="nav_left">
+        <a class="logo" href="#"></a>
+        <ul class="nav_left_inner">
+          <li><a href="#">포지션</a></li>
+          <li><a href="#">대시보드</a></li>
+          <li><a href="#">내 프로필</a></li>
+        </ul>
+      </div>
+      <div class="nav_right">
+        <div class="search_nav">
+          <a href="#">
+            <span class="blind">search</span>
+          </a>
+        </div>
+        <div class="profile_nav_icon">
+          <a href="#">
+            <span class="blind">profile</span>
+          </a>
+        </div>
+        <div class="job_app">
+          <a href="#">취업 APP</a>
+        </div>
+        <div class="ats">
+          <a href="#">기업서비스</a>
+        </div>
+      </div>
+      <a class="toggle_nav" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </header>
+  <main>
+    <section id="visual_image">
+      <!-- Swiper -->    
+        <div class="swiper visualSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div><img src="img/vis_img1_1.png" alt="비주얼이미지1-1"></div>
+              <div class="slide_center1">
+                <div class="inner_slide">
+                  <em>취업은 잡다와 함께</em>
+                  <strong>새로워진 잡다
+100%즐기기</strong>
+<p>잡다를 100%즐길 수 있는 컨텐츠를 확인해보세요!</p>
+                  <a href="#">자세히 보기</a>
+                </div>
+              </div>
+              <div><img src="img/vis_img1_2.png" alt="비주얼이미지1-2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div><img src="img/vis_img2_1.png" alt="비주얼이미지2-1"></div>
+              <div class="slide_center2">
+                <div class="inner_slide">
+                  <em>JOBDA GRAND RENEWAL</em>
+                  <strong>취업 기회를 잡다
+합격 순간을 잡다</strong>
+                  <p>생생한 기업문화 엿보고  
+합격률 높은 포지션에 입사지원해보세요</p>
+                  <a href="#">취업 지금 바로 잡다</a>
+                </div>
+              </div>
+              <div><img src="img/vis_img2_2.png" alt="비주얼이미지2-2"></div>
+            </div>
+            <div class="swiper-slide">
+              <div><img src="img/vis_img3_1.png" alt="비주얼이미지3-1"></div>
+              <div class="slide_center3">
+                <div class="inner_slide">
+                  <em>08월 16일(화) - 09월 16일(금)</em>
+                  <strong>신규 회원가입
+이벤트</strong>
+                  <p>신규 회원가입 후 이벤트를 신청하시면
+네이버페이 1,000원을 드려요!</p>
+                  <a href="#">자세히 보기</a>
+                </div>
+              </div>
+              <div><img src="img/vis_img3_2.png" alt="비주얼이미지1"></div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".visualSwiper", {
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            autoplay: {
+              delay: 5000,
+            },
+            speed : 1000,
+          });
+        </script>
+    </section>
+    <section id="page_card">
+      <div class="recomend_wrap">
+        <div>
+          <a href="#" class="recomend_btn">
+            전체
+          </a>
+        </div>
+        <div>
+          <a href="#" class="recomend_btn">
+            잡다가 추천하는
+          </a>
+        </div>        
+      </div>
+      <div class="filter_wrap">
+        <div class="filter_left">
+          <a class="filter_option"><input type="radio" name="orderType" value="POPULER">인기순</a>
+          <a class="filter_option"><input type="radio" name="orderType" value="LATEST">최신순</a>
+          <a class="filter_option"><input type="radio" name="orderType" value="SALARY">연봉순</a>
+          <a class="filter_option"><input type="radio" name="orderType" value="DEADLINE">마감순</a>
+        </div>
+        <div class="filter_right">
+          <div class="btn_select_wrap"><a href="#" class="btn_select">직군·직무</a></div>
+          <div class="btn_select_wrap"><a href="#" class="btn_select">경력</a></div>
+          <div class="btn_select_wrap"><a href="#" class="btn_select">연봉</a></div>
+          <div class="btn_select_wrap"><a href="#" class="btn_select">지역</a></div>
+          <div class="btn_select_wrap"><a href="#" class="btn_select">매칭상태</a></div>
+          <a href="#" class="filter_reset">필터초기화</a>
+        </div>
+      </div>
+      <ul class="card_page">
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/MLops_2.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/MLops_2.jpg)"></div>
+              <h2>MLOps 연구개발자</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">몬드리안에이아이(주)</div>
+              <div class="location">인천</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력무관   #AI · 빅데이터   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/Esteem_1.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/Esteem_2.png)"></div>
+              <h2>리크루터 경력직 모집</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">(주)에스팀</div>
+              <div class="location">서울</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #인사   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/glolang.png)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/glolang.png)"></div>
+              <h2>프로덕트 디자이너 (UX/UI)</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">주식회사 글로랑</div>
+              <div class="location">서울</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #시각디자인+1   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/MLops_2.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/MLops_2.jpg)"></div>
+              <h2>Backend Developer</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">몬드리안에이아이(주)</div>
+              <div class="location">인천</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #웹 개발+3   #상시 채용 </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/yelim_1.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/yelim_2.jpg)"></div>
+              <h2>마케팅(광고홍보) 경력사원 모집</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">(주)예림임업</div>
+              <div class="location">인천</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #홍보 · 광고 · PR   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/ilhwa_1.png)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/ilhwa_2.png)"></div>
+              <h2>건기식영업담당</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">주식회사 일화</div>
+              <div class="location">서울</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #일반영업   #상시 채용   </div>
+              <div class="subinfo">#연봉 2,000만원-6,500만원   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/cobition_1.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/cobition_2.jpg)"></div>
+              <h2>JAVA 개발직 경력자 채용</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">(주)코비젼</div>
+              <div class="location">서울</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #웹 · SW 기획   #상시 채용   </div>
+              <div class="subinfo">#연봉 3,300만원-8,000만원   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/prosave_2.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/prosave_2.jpg)"></div>
+              <h2>기술영업 담당자</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">(주)프로세이브</div>
+              <div class="location">경남</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #기술영업+1   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/covio_1.png)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/covio_2.png)"></div>
+              <h2>생산팀 직무 담당자</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">(주)코아바이오</div>
+              <div class="location">전북</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력무관   #생산   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/sicentific_2.png)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/sicentific_2.png)"></div>
+              <h2>아날로그/혼성신호 모델 개발자 (신입/경력)</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">사이언티픽아날로그랩스</div>
+              <div class="location">서울</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력무관   #전기 · 전자 · 제어   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/flexenm_1.jpg)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/flexenm_2.png)"></div>
+              <h2>UX/UI 서비스 기획자</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">플렉스이엔엠</div>
+              <div class="location">서울</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력   #웹 · SW 기획   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+        <li class="card_wrap">
+          <a class="card_article" href="#">
+            <div class="card_imgArea">
+              <div class="card_img" style="background-image: url(/img/cymax_1.png)"></div>
+            </div>
+            <div class="card_title">
+              <div class="card_subimg" style="background-image: url(/img/cymax_2.gif)"></div>
+              <h2>[싸이맥스] 영업팀 신입 정규직</h2>
+            </div>
+            <div class="company_info">
+              <div class="name">(주)싸이맥스</div>
+              <div class="location">경기</div>
+            </div>
+            <div class="company_subinfo">
+              <div class="subinfo">#경력무관   #일반영업+2   #상시 채용   </div>
+            </div>
+          </a>
+          <a class="bookmark_btn" href="#">
+            <span>bookmark</span>
+          </a>
+        </li>
+      </ul>
+      <div class="btn_more">
+        <a href="#">포지션 더보기</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_left">
+      <div class="copyright">&copy; 2020 Copyright JAINWON</div>
+      <div class="info_service">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">서비스 이용약관</a>
+      </div>
+      <div class="infoText_wrap">
+        <div class="infoText">
+          <p>자인원 대표자 이형우</p>
+          <p>대표메일 supports@midasone.ai</p>
+        </div>
+        <div class="infoText">
+          <p>경기 성남시 분당구 판교로228번길 17, 판교세븐벤처밸리2 10층(삼평동)</p>
+        </div>
+        <div class="infoText">
+          <p>유료직업소개사업등록번호 : (국내) 제2021-3780288-14-5-00039호</p>
+        </div>
+        <div class="infoText">
+          <p>사업자번호 170-88-01418</p>
+          <p>직업정보제공사업 신고번호 J1516020210006</p>
+        </div>
+      </div>
+      <a class="f_logo" href="#">
+        <span class="hiddenf">JOBDA</span>
+      </a>
+    </div>
+    <ul class="footer_right">
+      <li class="siteMap_wrap">
+        <em class="siteMaptitle">About</em>
+        <a href="#">잡다선언문</a>
+        <a href="#">잡다매칭 소개</a>
+        <a href="#">기업문화 소개</a>
+        <a href="#">역검 소개</a>
+      </li>
+      <li class="siteMap_wrap">
+        <em class="siteMaptitle">잡다 매칭</em>
+        <a href="#">포지션</a>
+        <a href="#">대시보드</a>
+        <a href="#">내 프로필</a>
+      </li>
+      <li class="siteMap_wrap">
+        <em class="siteMaptitle">역검</em>
+        <a href="#">역검 응시</a>
+        <a href="#">역검 튜토리얼</a>
+        <a href="#">역검 소개</a>
+      </li>
+      <li class="siteMap_wrap">
+        <em class="siteMaptitle">개발자 검사</em>
+        <a href="#">개발자 역검</a>
+        <a href="#">개발자 역검 튜토리얼</a>
+        <a href="#">개발구현능력 검사</a>
+        <a href="#">개발구현능력 검사 튜토리얼</a>
+      </li>
+      <li class="siteMap_wrap">
+        <em class="siteMaptitle">취업 APP</em>
+        <a href="#">기업 리뷰</a>
+        <a href="#">기출 면접 연습</a>
+        <a href="#">면접 합격 후기</a>
+        <a href="#">워너비 직장생활</a>
+      </li>
+      <li class="siteMap_wrap">
+        <em class="siteMaptitle">취업 콘텐츠</em>
+        <a href="#">취업 콘텐츠</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
