@@ -17,7 +17,7 @@ header{
   .logo{
     width: 90px; height: 20px;
     margin: 34px 0;
-    background: url(/img/iconLogo.png) no-repeat;
+    background: url(../img/iconLogo.png) no-repeat;
     background-size: cover;
   }
   .nav_left{
@@ -68,12 +68,12 @@ header{
   }
   .search_nav{
     width:24px; height: 24px;
-    background: url(/img/nav_search.png) no-repeat;
+    background: url(../img/nav_search.png) no-repeat;
     background-size: cover;
   }
   .profile_nav_icon{
     width:24px; height: 24px;
-    background: url(/img/nav_profile.png) no-repeat;
+    background: url(../img/nav_profile.png) no-repeat;
     background-size: cover;
     margin-left: 16px;
   }
@@ -104,7 +104,7 @@ header{
     width: 5px;
     height: 8px;
     margin-left: 10px;
-    background-image: url(/img/iconLinkArrow.png);
+    background-image: url(../img/iconLinkArrow.png);
     background-size: cover;
     content: "";
   }
